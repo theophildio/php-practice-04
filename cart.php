@@ -21,4 +21,13 @@ class Product
         return '$' . number_format($this->price, 2);
     }
 
+    // Show product details
+    public function showDetails()
+    {
+        echo "Product Details:\n";
+        echo "- ID: {$this->id}\n";
+        echo "- Name: {$this->name}\n";
+        echo "- Price: {$this->getFormattedPrice()}\n";
+    }
+
 }
